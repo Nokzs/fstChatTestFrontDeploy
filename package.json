@@ -12,7 +12,7 @@
     "test": "vitest run",
     "testSinceCommit": "vitest run --changed",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/Nokzs/fstChatTestFrontDeploy.git"
+    "deploy": "gh-pages -b master -d build -r https://x-access-token:${GITHUB_TOKEN}@github.com/Nokzs/fstChatTestFrontDeploy.git"
   },
   "dependencies": {
     "react": "^19.1.1",
