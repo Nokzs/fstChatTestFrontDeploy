@@ -9,6 +9,9 @@ export default defineConfig({
       usePolling: true
     }
   },
+  build:{
+    outDir: 'build'
+  },
   test: {
     environment: 'jsdom',
     globals: true,
