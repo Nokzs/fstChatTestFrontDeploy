@@ -30,7 +30,7 @@ jobs:
       - run: npm ci
 
       - run: npm run build
-
+      - run: git config --global user.email "alexischapusot@gmail.com" & git config --global user.name "alexis chapusot"
       - run: npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
