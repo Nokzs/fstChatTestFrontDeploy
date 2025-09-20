@@ -11,7 +11,7 @@ export default defineConfig({
     }
   },
   build:{
-    outdir:"build"
+    outDir:"build"
   },
 
   test: {
