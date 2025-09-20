@@ -1,4 +1,4 @@
-name: test and front deploy
+name: test and front deplo
 
 on:
   push:
