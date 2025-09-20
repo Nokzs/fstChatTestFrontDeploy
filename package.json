@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "testSinceCommit": "vitest run --changed"
+    "testSinceCommit": "vitest run --changed",
+    "homepage": "https://nokzs.github.io/fstChatTestFrontDeploy"
   },
   "dependencies": {
     "react": "^19.1.1",
