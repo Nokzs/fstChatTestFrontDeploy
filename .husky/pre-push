@@ -1,0 +1,18 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+CHANGED_FILES=$(git diff --cached --name-only)
+
+if echo "$CHANGED_FILES" | grep -q "^fst-chat/"; then
+  echo "🧪 Lancement des tests FRONT..."
+  cd ../fst-chat/
+  npm run testSinceCommit || exit 1
+fi
+
+if echo "$CHANGED_FILES" | grep -q "^fst-chat-back/"; then
+  echo "🧪 Lancement des tests BACK..."
+  cd ../fst-chat-back/
+  npm run 
+  npm run test:watch || exit 1
+fi
+
