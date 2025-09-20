@@ -10,7 +10,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: 'build', // 🔥 ici tu choisis ton dossier de sortie
+    outDir: 'build', // /!\ ne pas toucher permet le déploiement du site 
   },
   test: {
     environment: 'jsdom',
